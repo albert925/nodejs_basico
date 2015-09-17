@@ -1,0 +1,51 @@
+.tdPP{
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+}
+	.tdPP figure{
+		margin: 1em auto 1em auto;
+		width: 30%;
+	}
+		.tdPP figure figcaption{
+			background: rgba(0,0,0,0.4);
+			padding: 1em 3em;
+		}
+			.tdPP figure figcaption a{
+				color: #9F783D;
+				padding: 0.5em 1em;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+			.tdPP figure figcaption a:hover,.tdPP figure figcaption a:active{
+				background: #9F783D;
+				color: #fff;
+			}
+			.tdPP figure figcaption h2{
+				color: #9F783D;
+				font-size: 28px;
+				margin: 0;
+				text-transform: uppercase;
+			}
+			.tdPP figure figcaption p{color: #fff;}
+@media screen and (max-width: 900px){
+		.tdPP figure{width: 40%;}
+			.tdPP figure figcaption{
+				padding: 0.5em;
+			}
+}
+@media screen and (max-width: 550px){
+	.tdPP{
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+		.tdPP figure{
+			margin: 1em auto;
+			width: 90%;
+		}
+}

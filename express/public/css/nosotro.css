@@ -1,0 +1,23 @@
+#banner{
+	margin-top: 1em;
+}
+#disnhhs{
+	background: rgba(0,0,0,0.5);
+	padding:1em 2em;
+	margin:1em 0 0 0;
+}
+#Nnp{
+	background: url(../imagenes/textura2.png);
+	padding: 1em;
+	margin:0;
+}
+.oscb{
+	background: rgba(0,0,0,0.5);
+}
+.textons{
+	/*color: #fff;*/
+}
+	.textons h2{color: #A07940;}
+	.textons p,.textonvv p{
+		text-align: justify;
+	}

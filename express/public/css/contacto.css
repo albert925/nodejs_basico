@@ -1,0 +1,39 @@
+.cca{
+	width: 30%;
+}
+.ccb{
+	width: 40%;
+}
+.contacto{
+	color: #fff;
+	display: flex;
+	-webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+	padding: 1em 0;
+}
+	.contacto #redes{
+		margin-top: 1em;
+	}
+		.contacto #redes a{
+			color: #9F7834;
+			font-size: 35px;
+			margin-right: 0.5em;
+			text-decoration: none;
+		}
+@media screen and (max-width: 900px){
+	.cca,.ccb{
+		width: 45%;
+	}
+}
+@media screen and (max-width: 550px){
+	.contacto{
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.cca,.ccb{
+		margin: 1em auto;
+		width: 90%;
+	}
+}

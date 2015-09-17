@@ -1,0 +1,97 @@
+.infem{
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	background: url(../imagenes/textura2.png);
+	display: flex;
+	-webit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+}
+	.infem #emun{
+		margin: 1em 0;
+		width: 40%;
+	}
+		.infem #emun img{
+			border:10px solid #fff;
+		}
+	.infem #emdo{
+		width: 40%;
+	}
+		.infem #emdo p{
+			color: #fff;
+			text-align: justify;
+		}
+.migms{
+	background: rgba(0,0,0,0.4);
+	display: flex;
+	-webit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+	padding: 1em 0;
+}
+	.migms #gdos{
+		width: 27%;
+	}
+	.migms #gnfg{
+		width: 65%;
+	}
+.tipos_cafes{
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+}
+	.tipos_cafes figure{
+		margin: 1em auto 1em auto;
+		width: 40%;
+	}
+		.tipos_cafes figure figcaption{
+			background: rgba(0,0,0,0.4);
+			padding: 1em 3em;
+		}
+			.tipos_cafes figure figcaption a{
+				color: #9F783D;
+				padding: 0.5em 1em;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+			.tipos_cafes figure figcaption a:hover,.tipos_cafes figure figcaption a:active{
+				background: #9F783D;
+				color: #fff;
+			}
+			.tipos_cafes figure figcaption h2{
+				color: #9F783D;
+				font-size: 28px;
+				margin: 0;
+				text-transform: uppercase;
+			}
+			.tipos_cafes figure figcaption p{color: #fff;}
+@media screen and (max-width: 900px){
+	.infem{
+		-webkit-align-items: initial;
+		-ms-align-items: initial;
+		align-items: initial;
+	}
+			.tipos_cafes figure figcaption{
+				padding: 0.5em;
+			}
+}
+@media screen and (max-width: 550px){
+	.infem,.migms,.tipos_cafes{
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+		.infem #emun,.infem #emdo,.migms #gnfg,.tipos_cafes figure{
+			margin: 1em auto;
+			width: 90%;
+		}
+			.infem #emun img{
+				border:3px solid #fff;
+			}
+		.migms #gdos{display: none;}
+}
