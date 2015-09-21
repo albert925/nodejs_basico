@@ -1,0 +1,9 @@
+extend layout.jade
+block contenido
+	section 
+		h1 from pos
+		article
+			form(method="post" action="/form/sl" style="margin:1em;")
+				label Nombre
+				input(type="text" name="tit" placeholder="Nombre producto")
+				input(type="submit" vale="Enviar")
