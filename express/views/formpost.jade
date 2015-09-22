@@ -3,7 +3,9 @@ block contenido
 	section 
 		h1 from pos
 		article
-			form(method="post" action="/form/sl" style="margin:1em;")
+			form(method="post" action="/form/sl" enctype="multipart/form-data" style="margin:1em;")
 				label Nombre
 				input(type="text" name="tit" placeholder="Nombre producto")
+				label Imagen o archivo
+				input(type="file" name="arcimg" required)
 				input(type="submit" vale="Enviar")
